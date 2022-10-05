@@ -1,0 +1,99 @@
+
+/* PC only */
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+@media (min-width: 985px) and (max-width: 1200px) {
+    .hidden-pc-low{
+        display: none;
+    }
+
+    
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+}
+
+/* Tablet Only */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    .service-form{
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .primary-title{
+        text-align: center !important;
+    }
+
+    .profile-num-icon{
+        font-size: 22px;
+    }
+    
+    .profile-num-value-1{
+        font-size: 16px;
+    }
+
+    .profile-num-value-desc{
+        font-size: 12px;
+    }
+
+    .profile-desc{
+        padding: 10px;
+    }
+
+    .video-intro{
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .company-item{
+        font-size: 18px;
+    }
+
+    .profile-min-height {
+        min-height: 430px;
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+}
+

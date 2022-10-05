@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/about-logo.png">
+    <title>LE LOC</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- meta -->
+    <meta name="title" content="TRÍ TUỆ TỰ NHIÊN" />
+    <meta name="author" content="TRÍ TUỆ TỰ NHIÊN" />
+    <meta name="description" content="Bussiness Cards Digital">
+    <meta name="keywords" content="Bussiness Cards Digital">
+    <meta name="author" content="TRÍ TUỆ TỰ NHIÊN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TRÍ TUỆ TỰ NHIÊN" />
+    <meta property="og:image" content="anhthuongthemdumenhahihi">
+    <meta property="og:description" content="Bussiness Cards Digital" />
+
+    <!-- <meta property=" og:image" content="./assets/images/ic-website.png" /> -->
+</head>
+
+<body>
+
+    <!-- LOADING -->
+    <div class="loading centering">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/header-logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <!-- <li class="soft-menu__item dark-modes">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+
+                </a>
+            </li> -->
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about" data-address="about">
+                    <i class="fa-solid fa-user-group"></i>TRANG CHỦ
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product" data-address="machine">
+                    <i class="fa-solid fa-cart-shopping"></i>GIỚI THIỆU
+                </a>
+
+                <!-- sub -->
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#policy" data-address="service">
+                    <i class="fa-solid fa-book"></i>TIỂU SỬ
+                </a>
+            </li>
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#feedback" data-address="vision">
+                    <i class="fa-solid fa-comments"></i>KINH NGHIỆM
+                </a>
+            </li>
+
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#feedback" data-address="vision">
+                    <i class="fa-solid fa-right-to-bracket"></i> DOANH NGHIỆP
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header d-flex justify-content-center hidden-m-t">
+        <div class="header-item">
+            TRANG CHỦ
+        </div>
+        <div class="header-item">
+            GIỚI THIỆU
+        </div>
+        <div class="header-item">
+            TIỂU SỬ
+        </div>
+        <div class="header-item">
+            KINH NGHIỆM
+        </div>
+        <div class="header-item">
+            DOANH NGHIỆP
+        </div>
+    </div>
+
+    <!-- VIDEO INTRO -->
+    <div class="video-intro">
+        <div class="youtube-container">
+            <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/tvWAv_qDJ0w?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tvWAv_qDJ0w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="intro">
+        <div class="container">
+            <div class="primary-title text-center">
+                GIỚI THIỆU
+            </div>
+
+            <div class="intro-li">
+                <i class="fa-solid fa-caret-right"></i>
+                CTHĐQTCTY Cổ Phần <span class="primary-gradient-text-4">5s Global</span> & CTY Cổ phần <span
+                    class="primary-gradient-text-1">BĐS Hưng Lộc Land</span>
+            </div>
+            <div class="intro-li">
+                <i class="fa-solid fa-caret-right"></i>
+                ​Nhà sáng lập
+                <span class="primary-gradient-text-1">Tổ chức Giáo dục Action Now</span>
+            </div>
+
+            <div class="intro-li">
+                <i class="fa-solid fa-caret-right"></i>
+                ​Chuyên gia Huấn luyện & Đào tạo kỹ năng mềm & tư duy làm giàu cho hàng ngàn người tại VN trong hơn 20
+                năm qua.
+            </div>
+
+            <div class="intro-li">
+                <i class="fa-solid fa-caret-right"></i>
+                ​Chuyên gia Đào tạo về Tâm lý & Khai thác khả năng tiềm ẩn để đánh thức sức mạnh vĩ đại bên trong của
+                mỗi con người.
+
+            </div>
+
+            <div class="intro-li">
+                <i class="fa-solid fa-caret-right"></i>
+                ​Chuyên gia Truyền động lực & Cảm hứng cho Giới trẻ khởi nghiệp & Thanh thiếu niên để giúp họ theo đuổi
+                đam mê & khát
+                vọng thành công.
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="profile">
+        <div class="container">
+            <div class="primary-title text-left">
+                HỒ SƠ LÝ LỊCH
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="profile-nav">
+                        <div class="w-100 centering">
+                            <img src="/assets/images/avt.jpg" alt="" class="profile-avt">
+                        </div>
+
+                        <ul class="nav nav-tabs profile-nav-list" id="myTab" role="tablist">
+                            <li class="nav-item profile-nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    KINH NGHIỆM
+                                </a>
+                            </li>
+                            <li class="nav-item profile-nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">
+                                    <i class="fa-solid fa-building"></i>
+                                    CÔNG TY
+                                </a>
+                            </li>
+                            <li class="nav-item profile-nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    THÀNH TỰU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="profile-min-height d-flex align-items-center h-100">
+                        <div class="tab-content profile-content" id="myTabContent">
+                            <!--  -->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="job">
+                                    <div class="job-position">
+                                        Chủ tịch hội đồng quản trị
+                                    </div>
+                                    <div class="job-company">
+                                        Cổ Phần 5s global & CTY cổ phần BĐS Hưng Lộc Land
+                                    </div>
+                                </div>
+
+                                <div class="job">
+                                    <div class="job-position">
+                                        Nhà sáng lập
+                                    </div>
+                                    <div class="job-company">
+                                        Tổ chức Giáo dục Action Now
+                                    </div>
+                                </div>
+
+                                <div class="job">
+                                    <div class="job-position">
+                                        ​Chuyên gia
+                                    </div>
+                                    <div class="job-company">
+                                        Huấn luyện & Đào tạo
+                                    </div>
+                                    <div class="job-desc">
+                                        Huấn luyện & Đào tạo kỹ năng mềm & tư duy làm giàu cho hàng ngàn người tại VN
+                                        trong
+                                        hơn 20 năm qua.
+                                    </div>
+                                </div>
+
+                                <div class="job">
+                                    <div class="job-position">
+                                        ​Chuyên gia
+                                    </div>
+                                    <div class="job-company">
+                                        Đào tạo về Tâm lý & Khai thác khả năng
+                                    </div>
+                                    <div class="job-desc">
+                                        Đào tạo về Tâm lý & Khai thác khả năng tiềm ẩn để đánh thức sức mạnh vĩ đại bên
+                                        trong của mỗi con người.
+                                    </div>
+                                </div>
+
+                                <div class="job">
+                                    <div class="job-position">
+                                        ​Chuyên gia
+                                    </div>
+                                    <div class="job-company">
+                                        Truyền động lực & Cảm hứng
+                                    </div>
+                                    <div class="job-desc">
+                                        Truyền động lực & Cảm hứng cho Giới trẻ khởi nghiệp & Thanh thiếu niên để giúp
+                                        họ
+                                        theo đuổi đam mê & khát vọng thành
+                                        công.
+                                    </div>
+                                </div>
+
+                                <div class="job">
+                                    <div class="job-position">
+                                        ​Bậc thầy
+                                    </div>
+                                    <div class="job-company">
+                                        Về Đào tạo Thiền định
+                                    </div>
+                                    <div class="job-desc">
+                                        Các khoá Thiền dành cho Doanh nhân, Lãnh đạo, chủ Doanh nghiệp, Thiền trong Kinh
+                                        doanh, Thiền trong đời sống hiện đại
+                                        v.v.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="h-100 d-flex align-items-center">
+                                    <div class="company">
+                                        <div class="company-item">
+                                            <i class="fa-solid fa-star"></i>
+                                            Công ty cổ phần
+                                            <span class="primary-gradient-text-3">Everrichs</span>
+                                        </div>
+
+                                        <div class="company-item">
+                                            <i class="fa-solid fa-star"></i>
+                                            Công ty cổ phần
+                                            <span class="primary-gradient-text-2">One Shopping</span>
+                                        </div>
+
+                                        <div class="company-item">
+                                            <i class="fa-solid fa-star"></i>
+                                            Công ty cổ phần <span class="primary-gradient-text-4"> 5s Global</span>
+                                        </div>
+
+                                        <div class="company-item">
+                                            <i class="fa-solid fa-star"></i>
+                                            Công ty cổ phần
+                                            <span class="primary-gradient-text-1">Hưng Lộc Land</span>
+                                        </div>
+
+                                        <div class="company-item">
+                                            <i class="fa-solid fa-star"></i>
+                                            Công ty
+                                            <span class="primary-gradient-text-5">Action Now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="achievement">
+                                    <div class="company-item">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        Đã đưa CTY lên Doanh thu 1000 ngàn tỷ mỗi năm.
+                                    </div>
+
+                                    <div class="company-item">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        Khai thác khả năng tiềm ẩn cho hàng ngàn con người tại Việt Nam.
+                                    </div>
+
+                                    <div class="company-item">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        Bậc thầy THIỀN ĐỊNH trong kinh doanh ĐẲNG CẤP QUỐC TẾ
+                                    </div>
+
+                                    <div class="company-item">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        Giúp bạn trở thành những "CHIẾN BINH BẤT BẠI"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-desc">
+            <div class="profile-quote">
+                “Không gì là không thể & sống là không chờ đợi”
+            </div>
+            <div class="profile-wrapper d-flex align-items-center justify-content-between">
+                <div class="profile-num">
+                    <div class="profile-num-icon">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div class="profile-num-value">
+                        <div class="profile-num-value-1">
+                            1000Tỷ
+                        </div>
+                        <div class="profile-num-value-desc">
+                            DOANH THU/NĂM
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-num">
+                    <div class="profile-num-icon">
+                        <i class="fa-sharp fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="profile-num-value">
+                        <div class="profile-num-value-1">
+                            200+
+                        </div>
+                        <div class="profile-num-value-desc">
+                            DỰ ÁN ĐẦU TƯ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-num">
+                    <div class="profile-num-icon">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <div class="profile-num-value">
+                        <div class="profile-num-value-1">
+                            5000+
+                        </div>
+                        <div class="profile-num-value-desc">
+                            HỌC VIÊN
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENT -->
+    <div class="event">
+        <div class="container">
+            <div class="event-title">
+                HÌNH ẢNH SỰ KIỆN
+            </div>
+
+            <div class="swiper swiper-event">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/assets/images/event-1.jpg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/event-2.jpg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/event-3.jpg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/event-4.jpg" alt="" class="swiper-event-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="feedback">
+        <div class="container">
+            <div class="primary-title text-center">
+                HỌC VIÊN CŨ
+            </div>
+
+            <div class="swiper swiper-feedback">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="feedback">
+                            <div class="centering">
+                                <img src="/assets/images/avt-feedback.png" alt="" class="feedback-avt">
+                            </div>
+
+                            <div class="feedback-content">
+                                After hearing about Rytr on the radio, I knew I had to try it. I love just how easy and
+                                seamless it is to use. It's like
+                                having your own personal writing assistant.
+                            </div>
+
+                            <div class="feedback-name text-center">
+                                Steven Matial
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feedback">
+                            <div class="centering">
+                                <img src="/assets/images/avt-feedback.png" alt="" class="feedback-avt">
+                            </div>
+
+                            <div class="feedback-content">
+                                After hearing about Rytr on the radio, I knew I had to try it. I love just how easy and
+                                seamless it is to use. It's like
+                                having your own personal writing assistant.
+                            </div>
+
+                            <div class="feedback-name text-center">
+                                Steven Matial
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="feedback">
+                            <div class="centering">
+                                <img src="/assets/images/avt-feedback.png" alt="" class="feedback-avt">
+                            </div>
+
+                            <div class="feedback-content">
+                                After hearing about Rytr on the radio, I knew I had to try it. I love just how easy and
+                                seamless it is to use. It's like
+                                having your own personal writing assistant.
+                            </div>
+
+                            <div class="feedback-name text-center">
+                                Steven Matial
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="company-slide">
+        <div class="container">
+            <div class="swiper swiper-company">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/assets/images/5.jpeg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/1.jpeg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/3.jpeg" alt="" class="swiper-event-img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/assets/images/5.jpeg" alt="" class="swiper-event-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE -->
+    <div class="padding-15">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="service-form">
+                    <form action="/action_page.php">
+
+                        <input type="text" id="fname" name="fname" value="" placeholder="Tên của bạn"><br>
+
+                        <input type="text" id="lname" name="lname" value="" placeholder="Email của bạn"><br>
+
+                        <input type="text" id="lname" name="lname" value="" placeholder="Lĩnh vực muốn hỏi"><br><br>
+
+                        <input type="text" id="lname" class="service-form-message" name="lname" value=""
+                            placeholder="Nhập tin nhắn"><br><br>
+
+                        <input class="service-form-button" type="submit" value="Gửi đi">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 margin-minus-15 hidden-m-t">
+                <div class="service-img">
+                    <img src="/assets/images/bg-2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer text-center">
+        2022 © Copyright.Al lrights Reserved.
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading centering">
+        <img src="./assets/images/about-logo.png" alt="">
+        <img src="./assets/images/ loading.gif" alt="">
+    </div>
+
+</body>
+
+</html>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+<!-- Swiper JS -->
