@@ -192,16 +192,34 @@ window.addEventListener("load", function(){
         keyboard: false
     })
 
-    if(window.screen.width<739){
-        myModal.show();
+    // if(window.screen.width<739){
+    //     myModal.show();
         
-        document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
-            document.getElementById("video-leloc").play()
-        });
-    }
+    //     document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+    //         document.getElementById("video-leloc").play()
+    //     });
+    // }
 
     document.querySelector(".modal-close-button").onclick = () => {
         myModal.hide();
     }
 })
 
+/* fix ios autoplay mp4 video */
+	Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+		get: function () {
+			return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+		}
+	});
+	document.querySelector('body').addEventListener('click touchstart', function () {
+		const videoElement = document.getElementById('video-leloc');
+		if (videoElement.playing) {
+			// video is already playing so do nothing
+		}
+		else {
+			// video is not playing
+			// so play video now
+			videoElement.play();
+		}
+	});
+	/* fix ios autoplay mp4 video */
