@@ -50,7 +50,6 @@
 </head>
 
 <body>
-
     <!-- LOADING -->
     <div class="loading centering">
         <img src="" alt="">
@@ -78,29 +77,29 @@
                 </a>
             </li> -->
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item--active">
-                <a class="" href="#about" data-address="about">
+                <a class="" href="#home" data-address="about">
                     <i class="fa-solid fa-user-group"></i>TRANG CHỦ
                 </a>
             </li>
             <li class="soft-menu__item hehe">
-                <a class="" href="#product" data-address="machine">
+                <a class="" href="#intro" data-address="machine">
                     <i class="fa-solid fa-cart-shopping"></i>GIỚI THIỆU
                 </a>
 
                 <!-- sub -->
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#policy" data-address="service">
+                <a class="" href="#profile" data-address="service">
                     <i class="fa-solid fa-book"></i>TIỂU SỬ
                 </a>
             </li>
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#feedback" data-address="vision">
+                <a class="" href="#profile" data-address="vision">
                     <i class="fa-solid fa-comments"></i>KINH NGHIỆM
                 </a>
             </li>
 
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#feedback" data-address="vision">
+                <a class="" href="#profile" data-address="vision">
                     <i class="fa-solid fa-right-to-bracket"></i> DOANH NGHIỆP
                 </a>
             </li>
@@ -109,25 +108,25 @@
 
     <!-- HEADER -->
     <div class="header d-flex justify-content-center hidden-m-t">
-        <div class="header-item">
+        <a href="#home" class="header-item">
             TRANG CHỦ
-        </div>
-        <div class="header-item">
+        </a>
+        <a href="#intro" class="header-item">
             GIỚI THIỆU
-        </div>
-        <div class="header-item">
+        </a>
+        <a href="#profile" class="header-item">
             TIỂU SỬ
-        </div>
-        <div class="header-item">
+        </a>
+        <a href="#profile" class="header-item">
             KINH NGHIỆM
-        </div>
-        <div class="header-item">
+        </a>
+        <a href="#profile" class="header-item">
             DOANH NGHIỆP
-        </div>
+        </a>
     </div>
 
     <!-- VIDEO INTRO -->
-    <div class="video-intro">
+    <div id="home" class="video-intro">
         <div class="youtube-container">
             <iframe width="100%" height="100%"
                 src="https://www.youtube.com/embed/tvWAv_qDJ0w?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tvWAv_qDJ0w"
@@ -138,7 +137,7 @@
     </div>
 
     <!-- INTRODUCTION -->
-    <div class="intro">
+    <div id="intro" class="intro">
         <div class="container">
             <div class="primary-title text-center">
                 GIỚI THIỆU
@@ -179,10 +178,10 @@
     </div>
 
     <!-- PROFILE -->
-    <div class="profile">
+    <div id="profile" class="profile">
         <div class="container">
-            <div class="primary-title text-left">
-                HỒ SƠ LÝ LỊCH
+            <div class="primary-title text-center mb-3">
+                THÔNG TIN CÁ NHÂN
             </div>
 
             <div class="row">
@@ -532,19 +531,36 @@
             <div class="swiper swiper-company">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="/assets/images/5.jpeg" alt="" class="swiper-event-img">
+                        <div class="swiper-company-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lazada_%282019%29.svg/2560px-Lazada_%282019%29.svg.png"
+                                alt="" class="swiper-event-img">
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="/assets/images/1.jpeg" alt="" class="swiper-event-img">
+                        <div class="swiper-company-slide">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo-700x394.png"
+                                alt="" class="swiper-event-img">
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="/assets/images/3.jpeg" alt="" class="swiper-event-img">
+                        <div class="swiper-company-slide">
+                            <img src="https://erickfallascorredor.com/wp-content/uploads/2021/04/Grupo-INS.png" alt=""
+                                class="swiper-event-img">
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="/assets/images/5.jpeg" alt="" class="swiper-event-img">
+                        <div class="swiper-company-slide">
+                            <img src="/assets/images/5s-logo.png" alt="" class="swiper-event-img">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-company-slide">
+                            <img src="/assets/images/hungloc-logo.png" alt="" class="swiper-event-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -581,7 +597,7 @@
 
     <!-- FOOTER -->
     <div class="footer text-center">
-        2022 © Copyright.Al lrights Reserved.
+        2022 © Copyright. Allrights Reserved.
     </div>
 
     <!-- SCROLL TO TOP -->

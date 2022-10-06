@@ -404,3 +404,17 @@ a:hover{
 .scroll-to-top:hover i{
   transform: scale(1.3) rotate(360deg);
 }
+
+
+.swiper-company-slide{
+  height: 120px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-company-slide img{
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+}
