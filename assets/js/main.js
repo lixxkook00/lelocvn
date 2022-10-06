@@ -157,27 +157,22 @@ let animationStatus = false;
 
 document.addEventListener('scroll', function() {
 
-    if(document.getElementById("number").getBoundingClientRect().top < screen.height/2 && !animationStatus){
+    if(document.getElementById("profile-main").getBoundingClientRect().top < screen.height/2 && !animationStatus){
         animationStatus = true
 
-        animateNumber(1500000, 2000, 0, function(number) {
+        animateNumber(1000, 3000, 0, function(number) {
             const formattedNumber = number.toLocaleString()
-            document.getElementById('users-count').innerText = formattedNumber + '+';
+            document.getElementById('users-count').innerText = formattedNumber + 'Tỷ';
         })
 
-        animateNumber(5000, 2000, 0, function(number) {
+        animateNumber(2000, 3000, 0, function(number) {
             const formattedNumber = number.toLocaleString()
             document.getElementById('ctv-count').innerText = formattedNumber + '+';
         })
 
-        animateNumber(270, 2000, 0, function(number) {
+        animateNumber(5000, 3000, 0, function(number) {
             const formattedNumber = number.toLocaleString()
             document.getElementById('partner-count').innerText = formattedNumber + '+';
-        })
-
-        animateNumber(7, 7000, 0, function(number) {
-            const formattedNumber = number.toLocaleString()
-            document.getElementById('office-count').innerText = formattedNumber + '+';
         })
     }
 

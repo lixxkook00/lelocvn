@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/avt.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/avt.jpg">
     <title>LE LOC</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
     <!-- HEADER MOBILE -->
     <div class="header-mobile hide-on-pc">
         <div class="header-mobile-right">
-            <img src="./assets/images/header-logo.png" alt="">
+            <!-- <img src="./assets/images/header-logo.png" alt=""> -->
         </div>
         <div class="header-mobile-left">
             <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
@@ -77,30 +77,30 @@
                 </a>
             </li> -->
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item--active">
-                <a class="" href="#home" data-address="about">
+                <a class="" href="#home-main" data-address="about">
                     <i class="fa-solid fa-user-group"></i>TRANG CHỦ
                 </a>
             </li>
-            <li class="soft-menu__item hehe">
+            <li onclick="toggleNavMobile()" class="soft-menu__item hehe">
                 <a class="" href="#intro" data-address="machine">
                     <i class="fa-solid fa-cart-shopping"></i>GIỚI THIỆU
                 </a>
 
                 <!-- sub -->
-            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#profile" data-address="service">
+            <li onclick="document.getElementById('home-tab').click()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#profile-main" data-address="service">
                     <i class="fa-solid fa-book"></i>TIỂU SỬ
                 </a>
             </li>
-            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#profile" data-address="vision">
-                    <i class="fa-solid fa-comments"></i>KINH NGHIỆM
+            <li onclick="document.getElementById('contact-tab').click()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#profile-main`">
+                    <i class="fa-solid fa-comments"></i>THÀNH TỰU
                 </a>
             </li>
 
-            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#profile" data-address="vision">
-                    <i class="fa-solid fa-right-to-bracket"></i> DOANH NGHIỆP
+            <li onclick="document.getElementById('profile-tab').click()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#profile-main" data-address="vision">
+                    <i class="fa-solid fa-building"></i> DOANH NGHIỆP
                 </a>
             </li>
         </ul>
@@ -108,25 +108,25 @@
 
     <!-- HEADER -->
     <div class="header d-flex justify-content-center hidden-m-t">
-        <a href="#home" class="header-item">
+        <a href="#home-main" class="header-item">
             TRANG CHỦ
         </a>
         <a href="#intro" class="header-item">
             GIỚI THIỆU
         </a>
-        <a href="#profile" class="header-item">
+        <a href="#profile-main" class="header-item" onclick="document.getElementById('home-tab').click()">
             TIỂU SỬ
         </a>
-        <a href="#profile" class="header-item">
-            KINH NGHIỆM
-        </a>
-        <a href="#profile" class="header-item">
+        <a href="#profile-main" class="header-item" onclick="document.getElementById('profile-tab').click()">
             DOANH NGHIỆP
+        </a>
+        <a href="#profile-main" class="header-item" onclick="document.getElementById('contact-tab').click()">
+            THÀNH TỰU
         </a>
     </div>
 
     <!-- VIDEO INTRO -->
-    <div id="home" class="video-intro">
+    <div id="home-main" class="video-intro">
         <div class="youtube-container">
             <iframe width="100%" height="100%"
                 src="https://www.youtube.com/embed/tvWAv_qDJ0w?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tvWAv_qDJ0w"
@@ -178,7 +178,7 @@
     </div>
 
     <!-- PROFILE -->
-    <div id="profile" class="profile">
+    <div id="profile-main" class="profile">
         <div class="container">
             <div class="primary-title text-center mb-3">
                 THÔNG TIN CÁ NHÂN
@@ -203,7 +203,7 @@
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                                     aria-controls="profile" aria-selected="false">
                                     <i class="fa-solid fa-building"></i>
-                                    CÔNG TY
+                                    DOANH NGHIỆP
                                 </a>
                             </li>
                             <li class="nav-item profile-nav-item">
@@ -242,7 +242,7 @@
 
                                 <div class="job">
                                     <div class="job-position">
-                                        ​Chuyên gia
+                                        Chuyên gia
                                     </div>
                                     <div class="job-company">
                                         Huấn luyện & Đào tạo
@@ -256,7 +256,7 @@
 
                                 <div class="job">
                                     <div class="job-position">
-                                        ​Chuyên gia
+                                        Chuyên gia
                                     </div>
                                     <div class="job-company">
                                         Đào tạo về Tâm lý & Khai thác khả năng
@@ -269,7 +269,7 @@
 
                                 <div class="job">
                                     <div class="job-position">
-                                        ​Chuyên gia
+                                        Chuyên gia
                                     </div>
                                     <div class="job-company">
                                         Truyền động lực & Cảm hứng
@@ -373,7 +373,7 @@
                         <i class="fa-solid fa-sack-dollar"></i>
                     </div>
                     <div class="profile-num-value">
-                        <div class="profile-num-value-1">
+                        <div id="users-count" class="profile-num-value-1">
                             1000Tỷ
                         </div>
                         <div class="profile-num-value-desc">
@@ -387,7 +387,7 @@
                         <i class="fa-sharp fa-solid fa-user-tie"></i>
                     </div>
                     <div class="profile-num-value">
-                        <div class="profile-num-value-1">
+                        <div id="ctv-count" class="profile-num-value-1">
                             200+
                         </div>
                         <div class="profile-num-value-desc">
@@ -401,7 +401,7 @@
                         <i class="fa-solid fa-chalkboard-user"></i>
                     </div>
                     <div class="profile-num-value">
-                        <div class="profile-num-value-1">
+                        <div id="partner-count" class="profile-num-value-1">
                             5000+
                         </div>
                         <div class="profile-num-value-desc">
@@ -607,8 +607,8 @@
 
     <!-- LOADING -->
     <div id="loading" class="loading centering">
-        <img src="./assets/images/about-logo.png" alt="">
-        <img src="./assets/images/ loading.gif" alt="">
+        <!-- <img src="./assets/images/about-logo.png" alt="">
+        <img src="./assets/images/ loading.gif" alt=""> -->
     </div>
 
 </body>
