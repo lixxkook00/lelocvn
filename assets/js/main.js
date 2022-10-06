@@ -187,4 +187,21 @@ window.addEventListener("load", function(){
     // loading animation
     document.querySelector('#loading').style.display = "none"
     
+    // handle show modal
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+        keyboard: false
+    })
+
+    if(window.screen.width<739){
+        myModal.show();
+        
+        document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+            document.getElementById("video-leloc").play()
+        });
+    }
+
+    document.querySelector(".modal-close-button").onclick = () => {
+        myModal.hide();
+    }
 })
+

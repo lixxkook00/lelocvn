@@ -260,3 +260,218 @@
   background-color: #000;
   color: #fff;
 }
+
+.modal-content{
+  border-radius: 20px;
+  position: relative;
+
+  border: 4px solid var(--primaryColor);
+}
+
+.modal-close-button{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--primaryColor);
+}
+
+.modal-close-button i{
+  font-size: 22px;
+}
+
+.modal-content .frm-contact-title{
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+
+.signin__field {
+    padding: 10px 0px;
+    position: relative;
+    padding-right: 10px;
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 40px;
+    font-weight: 700;
+    transition: .2s;
+    border: 1px solid #dddfe2;
+    width: calc(100% - 40px);
+    border-radius: 6px;
+    background: #fafafa;
+    line-height: 22px;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid var(--primaryColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    color: var(--primaryColor);
+    box-shadow: 0px 2px 2px var(--primaryColor);
+    cursor: pointer;
+    transition: all .2s linear ;
+    display: inline-flex;
+}
+
+.login__submit:hover{
+  cursor: pointer;
+  min-width: 300px;
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.login__submit:hover i{
+  color: #fff;
+}
+
+.button__icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: var(--primaryColor);
+}
+
+.signin__icon {
+    position: absolute;
+    color: var(--primaryColor);
+    height: 16px;
+    bottom: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translateY(50%) ;
+}
+
+.uto-dk a{
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+
+.login__submit{
+
+}
+
+/* #formRegisterDownline{
+  background: url(../images/we-bg.png) no-repeat center center;
+} */
+
+.popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.429);
+}
+
+.popup .modal-content{
+  width: 96%;
+  max-width: 500px;
+}
+
+
+.login {
+    padding: 15px !important;
+    padding-top: 79px;
+    min-height: 300px;
+    width: 100% !important;
+}
+
+.screen__content_logo {
+    width: 200px;
+    height: 49px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0px;
+    margin-bottom: 20px;
+}
+
+.login__input {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 35px;
+}
+
+.signin__field {
+    padding: 10px 0px;
+    position: relative;
+    padding-right: 10px;
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 40px;
+    font-weight: 700;
+    transition: .2s;
+    border: 1px solid #dddfe2;
+    width: calc(100% - 40px);
+    border-radius: 6px;
+    background: #fafafa;
+    line-height: 22px;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid var(--primaryColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    color: var(--primaryColor);
+    box-shadow: 0px 2px 2px var(--primaryColor);
+    cursor: pointer;
+    transition: all .2s linear ;
+    display: inline-flex;
+}
+
+.login__submit:hover{
+  cursor: pointer;
+  min-width: 300px;
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.login__submit:hover i{
+  color: #fff;
+}
+
+.login-title{
+  text-align: center;
+  color: var(--primaryColor);
+  font-weight: 600;
+}

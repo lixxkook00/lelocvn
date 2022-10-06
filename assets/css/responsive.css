@@ -10,7 +10,7 @@
 
 /* Tablet to PC low resolution */
 @media (min-width: 985px) and (max-width: 1200px) {
-    .hidden-pc-low{
+    .hide-on-pc{
         display: none;
     }
 
@@ -22,6 +22,10 @@
     .hidden-m-t {
         display: none !important;
     }
+
+    .youtube-container{
+        pointer-events: unset !important;
+    }
 }
 
 /* Tablet Only */
@@ -29,6 +33,8 @@
     .hidden-tl{
         display: none !important;
     }
+
+    
 }
 
 /* Mobile Only */

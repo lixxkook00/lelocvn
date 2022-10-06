@@ -128,11 +128,17 @@
     <!-- VIDEO INTRO -->
     <div id="home-main" class="video-intro">
         <div class="youtube-container">
-            <iframe width="100%" height="100%"
-                src="https://www.youtube.com/embed/tvWAv_qDJ0w?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tvWAv_qDJ0w"
+            <iframe id="video-intro" width="100%" height="100%" class="hidden-m-t"
+                src="https://www.youtube.com/embed/tvWAv_qDJ0w?autoplay=1&mute=1&muted=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tvWAv_qDJ0w"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+
+            <a href="https://www.youtube.com/watch?v=tvWAv_qDJ0w&list=TLGGvKN8XnVf87UwNjEwMjAyMg&t=11s">
+                <video id='video-leloc' class="hide-on-pc" muted playsinline preload="auto">
+                    <source src="/assets/images/videoplayback.mp4" type="video/mp4">
+                </video>
+            </a>
         </div>
     </div>
 
@@ -609,6 +615,51 @@
     <div id="loading" class="loading centering">
         <!-- <img src="./assets/images/about-logo.png" alt="">
         <img src="./assets/images/ loading.gif" alt=""> -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-close-button" type="button" data-dismiss="modal">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <form class="login" id="formRegisterDownline" method="">
+                    <div class="login-title">
+                        ĐĂNG KÍ TƯ VẤN NGAY
+                    </div>
+                    <div>
+                        <div class="signin__field">
+                            <i class="signin__icon fa-solid fa-circle-info"></i>
+                            <input type="text" class="login__input" name="FullName" placeholder="Họ và tên">
+                        </div>
+                        <div class="signin__field">
+                            <i class="signin__icon fa-solid fa-paper-plane"></i>
+                            <input type="text" class="login__input" name="Email" placeholder="Email">
+                        </div>
+                        <div class="signin__field">
+                            <i class="signin__icon fa-solid fa-circle-question"></i>
+                            <input type="text" class="login__input" name="Email" placeholder="Lĩnh vực muốn hỏi">
+                        </div>
+                        <div class="signin__field">
+                            <i class="signin__icon fa-solid fa-envelope"></i>
+                            <input type="text" class="login__input" name="Sponsor" placeholder="Nội dung muốn hỏi">
+                        </div>
+
+                        <div class="centering">
+                            <a href="/" class="button login__submit">
+                                <span class=" button__text">Đăng ký</span>
+                                <i class="button__icon fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <input name="__RequestVerificationToken" type="hidden"
+                        value="CfDJ8PXSB_sOBOBDogQu84pMeLtD-LGDWkyo768jWzxrAUARJlOWG_4Hy2HOJ6-Kt2hSQaP6YcPWda89zm-luyzLwjyCI5WgxUGeMXFzxXydF46PltBz5aCMY634pCE43eK9DFubkdMGQZU2Oq_MlKXfwgs">
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>

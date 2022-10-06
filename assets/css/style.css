@@ -418,3 +418,8 @@ a:hover{
   height: auto;
   filter: grayscale(1);
 }
+
+#video-leloc{
+  height: 100%;
+  width: 100%;
+}
