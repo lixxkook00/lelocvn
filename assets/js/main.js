@@ -18,6 +18,11 @@ $('.scroll-to-top').onclick = () => {
     });
 }
 
+const handlecc = (className) => {
+    toggleNavMobile()
+    document.getElementById(className).click()
+}
+
 // loading animation
 window.addEventListener('load', (event) => {
   $('.loading').style.display = "none"
