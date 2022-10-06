@@ -13,8 +13,6 @@
     .hide-on-pc{
         display: none;
     }
-
-    
 }
 
 /* Mobile & Tablet */
@@ -26,6 +24,15 @@
     .youtube-container{
         pointer-events: unset !important;
     }
+
+    .video-intro{
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .youtube-container a {
+        width: 100%;
+    }
 }
 
 /* Tablet Only */
@@ -33,8 +40,6 @@
     .hidden-tl{
         display: none !important;
     }
-
-    
 }
 
 /* Mobile Only */

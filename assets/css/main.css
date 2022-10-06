@@ -18,7 +18,6 @@
 }
 
 .video-intro{
-  height: calc(100vh - 64px);
   overflow: hidden;
 
   display: flex;
